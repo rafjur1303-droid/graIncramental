@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+  <meta charset="UTF-8">
+  <title>Moja gra incremental</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Moja gra incremental</title>
+
+</head>
+
+<body>
+  <div id = "side-menu">
+    <button class = "side-btn" onclick="switchMainTab('main-stats')">Stats</button>
+    <button class = "side-btn" onclick="switchMainTab('main-research')">Research</button>
+  </div>
+
+  <div id = "main-stats" class = "main-tab active">
+    <div class = "top-nav">
+      <button onclick="switchSubTab('stats-screen')">Stats</button>
+      <button onclick="switchSubTab('upgrades-screen')">Upgrades</button>
+    </div>
+
+    <div id="stats-screen" class="sub-tab active">
+      <h1 id = "money_amount">Money: 0</h1>
+      <div class = "multiplier-bar">
+        <button id = "btn-multiplier" onclick="buyMultiplier()">Cost: 100$ <br>
+          Gain: <span id = "multiplier_gain">0</span> M</button>
+        <h1 id = "multiplier_amount">Multiplier: 1</h1>
+      </div>
+
+      <div class = "rebirth-bar">
+        <button id = "btn-rebirth" onclick="buyRebirth()">Reset: M , $<br>
+          Gain: <span id="rebirth_gain">0</span> R</button>
+        <h1 id = "rebirth_amount">Rebirth: 1</h1>
+      </div>
+
+      <div class = "superRebirth-bar">
+        <button id = "btn-superRebirth" onclick="buySuperRebirth()">Reset: R , M , $<br>
+          Gain: <span id="superRebirth_gain">0</span> SR</button>
+        <h1 id = "superRebirth_amount">Super Rebirth: 1</h1>
+      </div>
+      <div class = "firstRow">
+        <button id = "btn-X-ADMIN">x<span id = "AdminX"></span></button>
+      </div>
+      <div class = "secondRow">
+        <button id = "btn-Reset-ADMIN" onclick="AdminXReset()">RE.</button>
+        <button id = "btn-*10-ADMIN" onclick="AdminX10()" >10</button>
+        <button id = "btn-*100-ADMIN" onclick="AdminX100()" >100</button>
+      </div>
+      <div class = "lastRow">
+        <button id = "btn-hardReset" onclick = "resetGame()">RESET</button>
+        <button id = "btn-M-ADMIN" onclick = "AdminM()" >M</button>
+        <button id = "btn-R-ADMIN" onclick = "AdminR()" >R</button>
+        <button id = "btn-RS-ADMIN" onclick = "AdminRS()" >RS</button>
+      </div>
+
+    </div>
+      <div id="upgrades-screen" class="sub-tab">
+        <div class = "firstRowUpgrades" >
+          <button id = "btn-Up-1" onclick = "Upgrade1()">$ x1.1<br>
+          (x<span id = "up1_boost" ></span>)<br>
+          Cost: <span id = "up1_cost"></span>$<br>
+          <span id = "up1_count"></span>/10</button>
+          <button id = "btn-Up-2" onclick = "Upgrade2()">$ boost M<br>
+            (x<span id = "up2_boost"></span>)<br>
+            Cost: 100k$<br>
+            <span id = "up2_count"></span>/1</button>
+          <button id = "btn-Up-3" onclick = "Upgrade3()">M x1.15<br>
+            (x<span id = "up3_boost" ></span>)<br>
+            Cost: <span id = "up3_cost"></span>M<br>
+            <span id = "up3_count"></span>/10</button>
+        </div>
+        <div class = "firstRowUpgrades" >
+          <button id = "btn-Up-4" onclick = "Upgrade4()">PlayTime boost R<br>
+            (x<span id = "up4_boost"></span>)<br>
+            Cost: 1kM<br>
+            <span id = "up4_count"></span>/1</button>
+        </div>
+      </div>
+  </div>
+  <div id="main-research" class="main-tab">
+    <div class="top-nav">
+      <button onclick="switchSubTab('research-scientists')">Researchers</button>
+      <button onclick="switchSubTab('research-tech')">Research</button>
+      <button onclick="switchSubTab('research-auto')">Automation</button>
+    </div>
+
+    <div id="research-scientists" class="sub-tab">
+      <h2>Research1</h2>
+    </div>
+
+    <div id="research-tech" class="sub-tab">
+      <h2>Research2</h2>
+    </div>
+
+    <div id="research-auto" class="sub-tab">
+      <h2>Research3</h2>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+

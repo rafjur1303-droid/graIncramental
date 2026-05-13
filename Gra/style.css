@@ -1,0 +1,458 @@
+/*=====(TŁO + CZCIONKA)=====*/
+body {
+    background-color: rgb(38 38 38);
+    color: #ffffff;
+    font-family: sans-serif;
+}
+/*=====(MENU)=====*/
+.main-tab { display: none; }
+.sub-tab { display: none; }
+.active { display: block !important; }
+/*==========*/
+#side-menu {
+    position: fixed;
+    right: 5px;
+    top: 29px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 100;
+}
+/*==========*/
+.top-nav {
+    display: flex;
+    gap: 20px;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+/*==========*/
+.side-btn {
+    width: 200px;
+    height: 100px;
+    background-color: #606060;
+    color: #000000;
+    border: 4px solid #343434;
+    margin-bottom: 10px;
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.25s;
+    font-weight: bold;
+}
+/*==========*/
+.side-btn:hover {
+    background-color: #807f7f;
+    transform: scale(1.05);
+}
+/*==========*/
+.side-btn:active {
+    background-color: #606060;
+    transform: scale(0.95);
+}
+/*==========*/
+.top-nav button {
+
+    padding: 0px 0px;
+    background-color: #606060;
+    color: #000000;
+    border: 4px solid #343434;
+    font-size: 40px;
+    margin-right: 0px;
+    margin-top: 20px;
+    cursor: pointer;
+    height: 100px;
+    width: 280px;
+    transition: 0.25s;
+    font-weight: bold;
+}
+/*==========*/
+.top-nav button:hover {
+    background-color: #807f7f;
+    transform: scale(1.05);
+}
+/*==========*/
+.top-nav button:active {
+    background-color: #606060;
+    transform: scale(0.95);
+}
+/*=====(NAPISY)=====*/
+#money_amount{
+    color: #00b400;
+    font-size: 70px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+/*==========*/
+#multiplier_amount{
+    color: #fd1b1b;
+    font-size: 45px;
+    margin-top: 0px;
+    margin-left: 40px;
+}
+/*==========*/
+#rebirth_amount{
+    color: #3333fd;
+    font-size: 45px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+/*==========*/
+#superRebirth_amount{
+    color: #05B8FF;
+    font-size: 45px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+/*=====(PRZYCISKI)=====*/
+#btn-multiplier {
+    background-color: #ff2a2a;
+    color: #000000;
+    border: 4px solid #880000;
+    width: 240px;
+    height: 95px;
+    font-size: 22px;
+    margin-top: 0px;
+    margin-left: 20px;
+    transition: 0.25s;
+    border-radius: 25px;
+}
+#btn-multiplier:hover {
+    background-color: #ff5151;
+    transform: scale(1.05);
+}
+#btn-multiplier:active {
+    transform: scale(0.95);
+    background-color: #ff2a2a;
+}
+/*==========*/
+#btn-rebirth {
+    background-color: #0270FF;
+    color: #000000;
+    border: 4px solid #1500FF;
+    width: 240px;
+    height: 95px;
+    font-size: 22px;
+    margin-top: 40px;
+    margin-left: 20px;
+    transition: 0.25s;
+    border-radius: 25px;
+}
+#btn-rebirth:hover {
+    background-color: #0296ff;
+    transform: scale(1.05);
+}
+#btn-rebirth:active {
+    transform: scale(0.95);
+    background-color: #0270FF;
+}
+/*==========*/
+#btn-superRebirth {
+    background-color: #05B8FF;
+    color: #000000;
+    border: 4px solid #0260D1;
+    width: 240px;
+    height: 95px;
+    font-size: 22px;
+    margin-top: 40px;
+    margin-left: 20px;
+    transition: 0.25s;
+    border-radius: 25px;
+}
+#btn-superRebirth:hover {
+    background-color: #07D5FF;
+    transform: scale(1.05);
+}
+#btn-superRebirth:active {
+    transform: scale(0.95);
+    background-color: #05B8FF;
+}
+/*==========*/
+#btn-hardReset {
+    background-color: #606060;
+    color: #000000;
+    border: 4px solid #343434;
+    width: 160px;
+    height: 60px;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-left: 20px;
+    transition: 0.25s;
+    border-radius: 18px;
+}
+#btn-hardReset:hover {
+    background-color: #807f7f;
+    transform: scale(1.05);
+}
+#btn-hardReset:active {
+    transform: scale(0.95);
+    background-color: #606060;
+}
+/*==========*/
+#btn-M-ADMIN {
+    background-color: #ff2a2a;
+    color: #000000;
+    border: 4px solid #880000;
+    width: 90px;
+    height: 90px;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-left: 500px;
+    transition: 0.25s;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#btn-M-ADMIN:hover {
+    background-color: #ff5151;
+    transform: scale(1.05);
+}
+#btn-M-ADMIN:active {
+    transform: scale(0.95);
+    background-color: #ff2a2a;
+}
+/*==========*/
+#btn-R-ADMIN {
+    background-color: #0270FF;
+    color: #000000;
+    border: 4px solid #1500FF;
+    width: 90px;
+    height: 90px;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-left: 20px;
+    transition: 0.25s;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#btn-R-ADMIN:hover {
+    background-color: #0296ff;
+    transform: scale(1.05);
+}
+#btn-R-ADMIN:active {
+    transform: scale(0.95);
+    background-color: #0270FF;
+}
+/*==========*/
+#btn-RS-ADMIN {
+    background-color: #05B8FF;
+    color: #000000;
+    border: 4px solid #0260D1;
+    width: 90px;
+    height: 90px;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-left: 20px;
+    transition: 0.25s;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#btn-RS-ADMIN:hover {
+    background-color: #07D5FF;
+    transform: scale(1.05);
+}
+#btn-RS-ADMIN:active {
+    transform: scale(0.95);
+    background-color: #05B8FF;
+}
+/*==========*/
+#btn-Reset-ADMIN {
+    background-color: #606060;
+    color: #000000;
+    border: 4px solid #343434;
+    width: 90px;
+    height: 90px;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-left: 680px;
+    transition: 0.25s;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#btn-Reset-ADMIN:hover {
+    background-color: #807f7f;
+    transform: scale(1.05);
+}
+#btn-Reset-ADMIN:active {
+    transform: scale(0.95);
+    background-color: #606060;
+}
+/*==========*/
+#btn-\*10-ADMIN {
+    background-color: #606060;
+    color: #000000;
+    border: 4px solid #343434;
+    width: 90px;
+    height: 90px;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-left: 20px;
+    transition: 0.25s;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#btn-\*10-ADMIN:hover {
+    background-color: #807f7f;
+    transform: scale(1.05);
+}
+#btn-\*10-ADMIN:active {
+    transform: scale(0.95);
+    background-color: #606060;
+}
+/*==========*/
+#btn-\*100-ADMIN {
+    background-color: #606060;
+    color: #000000;
+    border: 4px solid #343434;
+    width: 90px;
+    height: 90px;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-left: 20px;
+    transition: 0.25s;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#btn-\*100-ADMIN:hover {
+    background-color: #807f7f;
+    transform: scale(1.05);
+}
+#btn-\*100-ADMIN:active {
+    transform: scale(0.95);
+    background-color: #606060;
+}
+/*==========*/
+#btn-X-ADMIN {
+    background-color: #606060;
+    color: #000000;
+    border: 4px solid #343434;
+    width: 310px;
+    height: 90px;
+    font-size: 35px;
+    margin-top: 240px;
+    margin-left: 680px;
+    transition: 0.25s;
+    border-radius: 5px;
+    font-weight: bold;
+}
+/*==========*/
+#btn-Up-1 {
+    background-color: #49bb00;
+    color: #000000;
+    border: 6px solid #2c7500;
+    width: 500px;
+    height: 250px;
+    font-size: 45px;
+    margin-top: 0px;
+    margin-left: 20px;
+    transition: 0.25s;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#btn-Up-1:hover {
+    background-color: #5ae101;
+    transform: scale(1.05);
+}
+#btn-Up-1:active {
+    transform: scale(0.95);
+    background-color: #49bb00;
+}
+/*==========*/
+#btn-Up-2 {
+    background-color: #49bb00;
+    color: #000000;
+    border: 6px solid #2c7500;
+    width: 500px;
+    height: 250px;
+    font-size: 45px;
+    margin-top: 0px;
+    margin-left: 40px;
+    transition: 0.25s;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#btn-Up-2:hover {
+    background-color: #5ae101;
+    transform: scale(1.05);
+}
+#btn-Up-2:active {
+    transform: scale(0.95);
+    background-color: #49bb00;
+}
+/*==========*/
+#btn-Up-3 {
+    background-color: #ff2a2a;
+    color: #000000;
+    border: 6px solid #880000;
+    width: 500px;
+    height: 250px;
+    font-size: 45px;
+    margin-top: 0px;
+    margin-left: 40px;
+    transition: 0.25s;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#btn-Up-3:hover {
+    background-color: #ff5151;
+    transform: scale(1.05);
+}
+#btn-Up-3:active {
+    transform: scale(0.95);
+    background-color: #ff2a2a;
+}
+/*==========*/
+#btn-Up-4 {
+    background-color: #ff2a2a;
+    color: #000000;
+    border: 6px solid #880000;
+    width: 500px;
+    height: 250px;
+    font-size: 45px;
+    margin-top: 40px;
+    margin-left: 20px;
+    transition: 0.25s;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#btn-Up-4:hover {
+    background-color: #ff5151;
+    transform: scale(1.05);
+}
+#btn-Up-4:active {
+    transform: scale(0.95);
+    background-color: #ff2a2a;
+}
+/*=====(ŁĄCZENIE NAPIS + PRZYCISK)=====*/
+.multiplier-bar {
+    display: flex;
+    align-items: center;
+}
+.rebirth-bar {
+    display: flex;
+    align-items: center;
+}
+.superRebirth-bar {
+    display: flex;
+    align-items: center;
+}
+.btn-locked {
+    filter: grayscale(65%);
+}
+.lastRow {
+    display: flex;
+    align-items: center;
+}
+.secondRow{
+    display: flex;
+    align-items: center;
+}
+.firstRow{
+    display: flex;
+    align-items: center;
+}
+.firstRowUpgrades{
+    display: flex;
+    align-items: center;
+}
+.secondRowUpgrades{
+    display: flex;
+    align-items: center;
+}
